@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
 BARVY:
@@ -14,3 +20,78 @@ tlačítko Facebook:				 #3b5998
 tlačítko Facebook aktivní: #2b406e
 */
 
+body {
+  background-color: #b2bec3;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  color: #d63031;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.box {
+  width: 550px;
+  margin-top: 150px;
+  box-shadow: 4px 4px 10px #888888;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: white;
+  padding: 30px;
+  position: relative;
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: absolute;
+  right: -75px;
+  top: -75px;
+}
+
+.twitter {
+  display: block;
+  text-decoration: none;
+  background-color: #1da1f2;
+  text-align: center;
+  margin-bottom: 5px;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.facebook {
+  display: block;
+  text-decoration: none;
+  background-color: #3b5998;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.box .facebook:hover,
+.facebook:active,
+.facebook:focus {
+  background-color: #2b406e;
+}
+
+.box .twitter:hover,
+.twitter:active,
+.twitter:focus {
+  background-color: #0b7bc1;
+}
